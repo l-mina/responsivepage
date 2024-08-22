@@ -1,0 +1,199 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+svg {
+    width: 30px;
+    height: auto;
+}
+
+svg:hover{
+    fill:orange;
+}
+
+header .image {
+    background-image: url('./assets/headshot.jpg');
+    width: 30%;
+    height: 25rem;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
+}
+
+header h1 {
+    color: cadetblue;
+    margin: 0;
+    font-size: 3rem;
+}
+
+h2 {
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin: 0;
+}
+
+section h2 {
+    margin-top: 3%;
+    margin-left: 6%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding-top:4%;
+    padding-bottom: 4%;
+    margin: 0;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 12rem;
+    border-top:34rem solid #007791 ;
+    border-right: 200rem solid white;
+    border-bottom:100px solid transparent; 
+    
+    top: 0;
+    z-index: -1;
+    /*top: -60%; change value as required 
+    right: -20%;  change value as required */
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 18rem;
+    padding: 1%;
+    align-self: center;
+    box-shadow: 1px 1px 5px grey;
+    background-color: whitesmoke;
+}
+
+#card a , footer a{
+    text-decoration: none;
+}
+
+#card p {
+    color: grey;
+    line-height: 150%;
+}
+
+.social {
+    
+    margin-right: 5%;
+    align-self: flex-end;
+    justify-content: right;
+}
+
+/* projects */
+#projects {
+    margin: 3% 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
+    gap: 3%;
+    justify-items: center;
+    padding-bottom: 5%;
+}
+
+.project {
+   width: 20rem;
+   height: 25rem;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 1px 1px 5px grey;
+}
+
+.project .image{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color:white;
+    flex-direction: column;  
+}
+
+#p1 {
+    background-color: plum;
+}
+
+#p2 {
+    background-color: palegoldenrod;
+}
+
+#p3 {
+    background-color: lightgreen;
+}
+
+#p4 {
+    background-color: palevioletred;
+}
+
+#p5 {
+    background-color: violet;
+}
+
+#p6 {
+    background-color: lightsalmon;
+}
+
+
+.export {
+    float: right;
+}
+
+.details {
+    margin: 0 10%;
+    margin-top: 5%;
+    font-size: larger;
+}
+
+.export svg {
+    width: 20px;
+    height: auto;
+}
+
+.export a {
+    text-decoration: none;
+}
+
+.details p {
+    font-size: small;
+    color: gray;
+}
+
+/*footer*/
+footer {
+    background-color: #007791;
+    display: flex;
+    flex-direction: row;
+    color:white;
+    margin-top: 5%;
+}
+
+.contact {
+    width: 40%;
+    padding: 5% 0 5% 10%;
+}
+
+.footerimage{
+    align-self: center;
+    justify-self:right;
+    width: 40%;
+    height: 20rem;
+    background-image: url('./assets/footer-image.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    margin: 1% 1% 1% 0;
+}
